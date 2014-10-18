@@ -42,8 +42,7 @@ function create() {
     kb.addKey(Phaser.Keyboard.DOWN).onDown.add(moveDown);
     game.add.sound("score");
 
-   // var hole = Math.floor(Math.random()*5)+1;
-    for (var count2 = 0; count2 <= 5; count2++) {
+    for (var count2 = 0; count2 <= 7; count2++) {
         var hole = Math.floor(Math.random()*5)+1;
         for (var count = 0; count <= 7; count++) {
 
@@ -58,12 +57,6 @@ function create() {
           }
 
         }
-
-
-        //for (var count = 6; count <= 7; count++) {
-           // var x = 50 * count;
-         //   game.add.sprite(100 * count2, x, "pipe");
-       // }
     }
 
     score = 0;
@@ -83,9 +76,7 @@ function update()
 
 
  function clickHandler (mouse) {
-     //game.add.sprite(event.x, event.y, "playerImg");
     score = score +1;
-    // alert(score);
      player.x = mouse.x;
      player.y = mouse.y;
  }
