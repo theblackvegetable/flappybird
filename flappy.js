@@ -118,7 +118,7 @@ function spaceHandler() {
 }
 function moveLeft() {
     player.x -= 10;
-}0
+}
 function moveRight () {
     player.x +=10;
 
